@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+    <div id=main>
+
+        <h1 id=title>Survey Form By Chroma ( NOT RESPONSIVE)</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id=survey-form>
+            <label id="name-label">Name</label><br>
+            <input id="name" required placeholder="Enter your name"></input>
+            <br>
+            <label id="email-label">Email</label><br>
+            <input id="email" type="email" required placeholder="Enter your Email"></input><br>
+            <label id="number-label">Age</label><br>
+            <input id="number" type="number" min=10 max=100 required placeholder="Age">
+            </input><br>
+            <label>Which option best describes your current role?</label><br>
+            <select id=dropdown type="dropdown">
+                <option value="Fulltime Job">FulltimeJob</option>
+                <option value="student">Student</option>
+                <option value="Fulltime learner">Fulltime learner</option>
+                <option value="prefer not to say">prefer not to say</option>
+
+            </select> <br>
+            <div class="radio">
+                <label>Would you recommend freeCodeCamp to a friend?</label> <br>
+                <input name=test type=radio value=Definitely checked><label>Definitely</label>
+                </input><br>
+                <Mdiv>
+                    <div>
+                        <input name=test type=radio value=Maybe><label>Maybe</label>
+                        </input><br>
+                    </div>
+                    <div>
+                        <input name=test type=radio value="Not sure"><label>Not sure</label>
+                    </div> <br>
+                    <label>What is your favorite feature of freeCodeCamp ?</label><br>
+                    <select name="Select an option">
+                        <option value=Challenges>Challenges</option>
+                        <option value=Projects>Projects</option>
+                        <option value=Community>Community</option>
+                        <option value=OpenSource>Open Source</option>
+                    </select><br>
+
+                    <label>What would you like to see improved? <span>(Check all that apply)</span></label>
+                    <div id=checkbox>
+                        <input type=checkbox value="Front-end Projects">Front-end Projects</input> <br>
+                        <input type=checkbox value="Back-end Projects">Back-end Projects</input> <br>
+                        <input type=checkbox value="Data Visualization">Data Visualization</input> <br>
+                        <input type=checkbox value="Challenges">Challenges</input> <br>
+                        <input type=checkbox value="Open Source Community">Open Source Community</input> <br>
+                        <input type=checkbox value="Gitter help rooms">Gitter help rooms</input><br>
+                        <input type=checkbox value="Videos">Videos</input><br>
+                        <input type=checkbox value="City Meetups">City Meetups</input><br>
+                        <input type=checkbox value="Wiki">Wiki</input><br>
+                        <input type=checkbox value="Forum">Forum</input><br>
+                        <input type=checkbox value="Additional Courses">Additional Courses</input>
+                    </div>
+                    <label>Any comments or suggestions?</label> <br>
+                    <textarea></textarea> <br>
+                    <button id=submit>Submit</button>
+        </form>
+    </div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
